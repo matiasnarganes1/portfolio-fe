@@ -1,1 +1,32 @@
-<p>header works!</p>
+<header class="header">
+  <nav class="nav-links">
+      <a routerLink="/home">
+        <fa-icon [icon]="faHome"></fa-icon>
+        Home
+      </a>
+      <a routerLink="/about">
+        <fa-icon [icon]="faUser"></fa-icon>
+        About
+      </a>
+      <a routerLink="/skills">
+        <fa-icon [icon]="faClipboardList"></fa-icon>
+        Skills
+      </a>
+      <a href="#experience" class="nav-item">
+        <fa-icon [icon]="faBriefcase"></fa-icon>
+        <span>Experience</span>
+      </a>
+  </nav>
+    <!-- <div class="language-buttons">
+      <button class="icon-button">
+        <img src="../../assets/images/gb.webp" alt="English">
+      </button>
+      <button class="icon-button">
+        <img src="../../assets/images/es.webp" alt="Español">
+      </button>
+      <button class="icon-button">
+        <img src="../../assets/images/br.webp" alt="Português">
+      </button>
+    </div> -->
+  </header>
+  
