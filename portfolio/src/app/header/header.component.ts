@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { faHome, faUser, faCogs, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faHome, faUser, faCogs, faBriefcase, faListAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [FontAwesomeModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.sass'
 })
@@ -17,6 +18,7 @@ export class HeaderComponent implements OnInit {
   faUser = faUser;
   faCogs = faCogs;
   faBriefcase = faBriefcase;
+  faListAlt = faListAlt;
 
 
   constructor() {}
