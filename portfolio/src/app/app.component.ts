@@ -9,12 +9,13 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ExperienceComponent } from './experience/experience.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, AboutComponent, SkillsComponent, ProjectsComponent, FontAwesomeModule, 
-    ExperienceComponent, FooterComponent],
+    ExperienceComponent, FooterComponent, CarouselModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
