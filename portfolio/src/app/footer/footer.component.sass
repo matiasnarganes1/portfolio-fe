@@ -1,0 +1,62 @@
+@import '../../styles'
+
+.footer-contact
+  padding: 40px
+  margin: 40px auto
+  border-radius: 10px
+  width: 60%
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
+  justify-content: center
+
+  h2
+    color: $violet-5
+    text-align: center
+    margin-bottom: 20px
+
+  form
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+  .form-group
+    display: flex
+    flex-direction: column
+    margin-bottom: 1rem
+
+    label
+      margin-bottom: 5px
+      color: $violet-5
+
+    input, textarea
+      width: 100%
+      padding: 10px
+      border: 2px solid $violet-5
+      border-radius: 5px
+      resize: vertical
+      &:focus
+        outline: none
+        border-color: $violet-2
+
+  button
+    padding: 0.7rem 1.5rem
+    background-color: $violet-5
+    color: white
+    border: none
+    border-radius: 4px
+    width: 30%
+    cursor: pointer
+    transition: background-color 0.3s
+    align-self: center
+
+    &:hover
+      background-color: $violet-3
+
+.footer-legend
+  margin-top: 2rem
+  padding: 2rem
+  text-align: center
+  font-size: 0.9rem
+  color: $violet-5
+
+  p
+    margin: 0.2rem 0

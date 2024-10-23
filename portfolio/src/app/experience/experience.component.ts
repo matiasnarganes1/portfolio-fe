@@ -4,64 +4,45 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-experience',
   standalone: true,
   imports: [FontAwesomeModule, CommonModule],
-  templateUrl: './projects.component.html',
-  styleUrl: './projects.component.sass'
+  templateUrl: './experience.component.html',
+  styleUrl: './experience.component.sass'
 })
-
-export class ProjectsComponent {
+export class ExperienceComponent {
   faExternalLinkAlt = faExternalLinkAlt;
   
-  projects = [
+  experiences = [
     {
       image: 'assets/images/proyecto.webp',
-      title: 'Project 1',
-      description: 'Descripción del proyecto 1.',
+      title: 'Experience 1',
+      description: 'Descripción del Experience 1.',
       link: 'https://www.example.com/project1'
     },
     {
       image: 'assets/images/proyecto.webp',
-      title: 'Project 2',
-      description: 'Descripción del proyecto 2.',
+      title: 'Experience 2',
+      description: 'Descripción del Experience 2.',
       link: 'https://www.example.com/project2'
     },
     {
       image: 'assets/images/proyecto.webp',
-      title: 'Project 3',
-      description: 'Descripción del proyecto 3.',
+      title: 'Experience 3',
+      description: 'Descripción del Experience 3.',
       link: 'https://www.example.com/project3'
     },
     {
       image: 'assets/images/proyecto.webp',
-      title: 'Project 4',
-      description: 'Descripción del proyecto 3.',
+      title: 'Experience 4',
+      description: 'Descripción del Experience 3.',
       link: 'https://www.example.com/project3'
     },
     {
       image: 'assets/images/proyecto.webp',
-      title: 'Project 5',
-      description: 'Descripción del proyecto 3.',
+      title: 'Experience 5',
+      description: 'Descripción del Experience 3.',
       link: 'https://www.example.com/project3'
     }
   ];
-
-  carouselOptions = {
-    loop: true,
-    margin: 10,
-    nav: true,
-    dots: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      }
-    }
-  };
 }

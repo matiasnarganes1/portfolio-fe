@@ -7,11 +7,13 @@ import { ProjectsComponent } from './projects/projects.component';
 import { faGlobe, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExperienceComponent } from './experience/experience.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, AboutComponent, SkillsComponent, ProjectsComponent, FontAwesomeModule],
+  imports: [RouterOutlet, HeaderComponent, AboutComponent, SkillsComponent, ProjectsComponent, FontAwesomeModule, ExperienceComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
