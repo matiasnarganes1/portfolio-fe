@@ -20,7 +20,6 @@ export class HeaderComponent implements OnInit {
   faBriefcase = faBriefcase;
   faListAlt = faListAlt;
 
-
   constructor() {}
 
   ngOnInit(): void {

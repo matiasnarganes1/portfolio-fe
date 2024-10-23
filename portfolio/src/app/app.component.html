@@ -1,4 +1,32 @@
-<app-header></app-header>
-<app-about></app-about>
-<app-skills></app-skills>
-<app-projects></app-projects>
+<div class="page-container">
+    <app-header></app-header>
+    <div class="main-container">
+        <div class="profile-section">
+            <img src="../assets/images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-description">
+                <h2>Matias Narganes</h2>
+                <h3>Muy optimista y siempre con ganas de aprender más y cosas nuevas, estoy listo para marcar la diferencia y enfrentar nuevos desafíos.</h3>
+                <div class="contact-icons">
+                    <a href="mailto:tuemail@example.com">
+                        <fa-icon [icon]="faGlobe"></fa-icon>
+                    </a>
+                    <a href="https://www.linkedin.com/in/matiasnarganes/" target="_blank">
+                        <fa-icon [icon]="faLinkedin"></fa-icon>
+                    </a>
+                    <a href="https://github.com/matiasnarganes1" target="_blank">
+                        <fa-icon [icon]="faGitHub"></fa-icon>
+                    </a>
+                    <a href="mailto:matiasnarganes1@gmail.com">
+                        <fa-icon [icon]="faEnvelope"></fa-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content-section">
+            <app-about></app-about>
+            <app-projects></app-projects>
+            <app-skills></app-skills>
+        </div>
+    </div>  
+</div>
+    

@@ -1,0 +1,75 @@
+@import '../styles'
+
+.page-container
+  padding: 0 10%
+
+.main-container
+  display: flex
+  min-height: 80vh
+
+.profile-section
+  width: 300px // Tamaño fijo en lugar de porcentaje
+  height: 600px // También puedes usar unidades relativas, pero este es un ejemplo
+  background-color: $violet-8
+  border-radius: 15px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  padding: 20px
+  position: sticky // Hace que la tarjeta se quede visible al hacer scroll
+  top: 20px // Distancia desde la parte superior de la ventana
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) // Añadí un poco de sombra para un efecto flotante
+
+  .profile-pic
+    border-radius: 15px
+    width: 80% // Ajusta al tamaño del contenedor
+    height: auto
+    object-fit: cover
+    margin-bottom: 20px
+
+  .profile-description
+    text-align: center
+
+.profile-description
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 60%
+  padding: 20px
+  border-radius: 8px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+
+  h2
+    margin: 0
+    font-size: 1.8rem
+    color: $violet-2
+
+  h3
+    font-size: 1.2rem
+    color: $violet-3
+
+  .contact-icons
+    display: flex
+    gap: 15%
+    margin-top: 10px
+    justify-content: center
+
+    a
+      color: $violet-5
+      text-decoration: none
+      transition: color 0.3s
+
+      &:hover
+        color: $violet-2
+    
+    fa-icon
+      font-size: 1.5rem
+
+
+.content-section
+  flex-grow: 1 // Ajusta para que ocupe el espacio restante
+  background-color: $violet-1 // Color para la sección principal
+  display: flex
+  flex-direction: column
+  padding-left: 5% // Añade algo de separación respecto a la tarjeta
