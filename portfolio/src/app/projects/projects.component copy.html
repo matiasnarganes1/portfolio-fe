@@ -1,14 +1,16 @@
-<owl-carousel-o [options]="carouselOptions" class="projects-carousel">
-  <ng-template carouselSlide *ngFor="let project of projects">
-    <div class="project-card">
-      <img [src]="project.image" alt="{{ project.title }}" class="project-image" />
-      <div class="project-content">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <a [href]="project.link" target="_blank" class="project-link">
-          <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
-        </a>
+<owl-carousel-o [options]="carouselOptions">
+  <ng-container *ngFor="let project of projects">
+    <ng-template carouselSlide>
+      <div class="project-card">
+        <img [src]="project.image" alt="{{ project.title }}" class="project-image" />
+        <div class="project-content">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <a [href]="project.link" target="_blank" class="project-link">
+            <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+          </a>
+        </div>
       </div>
-    </div>
-  </ng-template>
+    </ng-template>
+  </ng-container>
 </owl-carousel-o>
