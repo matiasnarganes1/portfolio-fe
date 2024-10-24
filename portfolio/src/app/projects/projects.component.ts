@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-projects',
@@ -48,21 +48,18 @@ export class ProjectsComponent {
     }
   ];
 
-  carouselOptions = {
+  customOptions: OwlOptions = {
+    items: 1,
     loop: true,
     margin: 10,
+    stagePadding: 50,
     nav: true,
-    dots: true,
+    dots: false,
+    autoWidth: false,
     responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      }
+      0: { items: 1 },
+      600: { items: 2 },
+      1000: { items: 3 }
     }
-  };
+  };  
 }

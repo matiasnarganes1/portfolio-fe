@@ -1,14 +1,20 @@
 @import '../../styles'
 
+.projects-container
+  padding: 20px
+
+  h1
+    font-size: 4rem
+    margin-bottom: 1rem
+    color: $orange-1
+
 .projects-carousel
-  width: 100%
   padding: 20px
   display: flex
   overflow-x: auto
   scroll-behavior: smooth
   gap: 20px
 
-  /* Estilos para ocultar las barras de scroll, en caso necesario */
   &::-webkit-scrollbar
     display: none
 
@@ -23,7 +29,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
   text-align: center
   min-width: 300px // Esto asegura que cada tarjeta tenga un ancho mínimo
-  flex-shrink: 0 // Evita que las tarjetas se reduzcan por el scroll horizontal
 
   img
     width: 100%
@@ -51,3 +56,23 @@
 
       &:hover
         color: $violet-2
+
+  .carousel
+    .owl-prev, .owl-next
+      background-color: $violet-6
+      color: #fff
+      border-radius: 50%
+      padding: 10px
+      border: none
+      cursor: pointer
+
+    .owl-prev:hover, .owl-next:hover
+      background-color: $violet-5
+
+    .owl-prev
+      position: absolute
+      left: -40px
+
+    .owl-next
+      position: absolute
+      right: -40px
