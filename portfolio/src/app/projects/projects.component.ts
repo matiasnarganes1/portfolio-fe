@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
+import { CarouselComponent } from '../shared/carousel/carousel.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [FontAwesomeModule, CommonModule, CarouselModule],
+  imports: [FontAwesomeModule, CommonModule, CarouselComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.sass'
 })
@@ -47,19 +47,4 @@ export class ProjectsComponent {
       link: 'https://www.example.com/project3'
     }
   ];
-
-  customOptions: OwlOptions = {
-    items: 1,
-    loop: true,
-    margin: 10,
-    stagePadding: 50,
-    nav: true,
-    dots: false,
-    autoWidth: false,
-    responsive: {
-      0: { items: 1 },
-      600: { items: 2 },
-      1000: { items: 3 }
-    }
-  };  
 }

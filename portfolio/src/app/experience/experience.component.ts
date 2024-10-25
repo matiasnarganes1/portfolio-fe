@@ -31,18 +31,6 @@ export class ExperienceComponent {
       title: 'Experience 3',
       description: 'Descripción del Experience 3.',
       link: 'https://www.example.com/project3'
-    },
-    {
-      image: 'assets/images/proyecto.webp',
-      title: 'Experience 4',
-      description: 'Descripción del Experience 3.',
-      link: 'https://www.example.com/project3'
-    },
-    {
-      image: 'assets/images/proyecto.webp',
-      title: 'Experience 5',
-      description: 'Descripción del Experience 3.',
-      link: 'https://www.example.com/project3'
     }
   ];
 }
