@@ -15,22 +15,22 @@ export class ExperienceComponent {
   
   experiences = [
     {
-      image: 'assets/images/proyecto.webp',
-      title: 'Experience 1',
-      description: 'Descripción del Experience 1.',
-      link: 'https://www.example.com/project1'
+      image: 'assets/images/avenga-logo.png',
+      title: 'Avenga (Ex Incluit)',
+      description: '(2021 - 2023) - FullStack Developer',
+      link: 'https://www.avenga.com/'
     },
     {
-      image: 'assets/images/proyecto.webp',
-      title: 'Experience 2',
-      description: 'Descripción del Experience 2.',
-      link: 'https://www.example.com/project2'
+      image: 'assets/images/crossbridge-logo.png',
+      title: 'Crossbridge',
+      description: '(2023) - FullStack Developer',
+      link: 'https://gocrossbridge.com/'
     },
     {
-      image: 'assets/images/proyecto.webp',
-      title: 'Experience 3',
-      description: 'Descripción del Experience 3.',
-      link: 'https://www.example.com/project3'
+      image: 'assets/images/Accenture-Logo.png',
+      title: 'Accenture',
+      description: '(2023 - present) - FullStack Developer ',
+      link: 'https://www.accenture.com/us-en'
     }
   ];
 }
